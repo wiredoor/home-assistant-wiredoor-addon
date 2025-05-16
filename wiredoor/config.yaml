@@ -1,0 +1,22 @@
+name: "Wiredoor Tunnel"
+slug: wiredoor
+description: "Expose Home Assistant securely using Wiredoor"
+version: "1.0.0"
+url: "https://github.com/wiredoor/home-assistant-addon/tree/main/wiredoor"
+# startup: services
+# boot: auto
+# host_network: true
+# hassio_api: true
+init: false
+privileged:
+  - NET_ADMIN
+arch:
+  - aarch64
+  - amd64
+  - armv7
+options:
+  url: ""
+  token: ""
+schema:
+  url: str
+  token: password
