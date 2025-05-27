@@ -17,8 +17,8 @@ LABEL io.hass.name="${BUILD_NAME}" \
     org.opencontainers.image.authors="Daniel Mesa <support@wiredoor.net>" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.url="https://www.wiredoor.net" \
-    org.opencontainers.image.source="https://github.com/wiredoor/home-assistant-addon" \
-    org.opencontainers.image.documentation="https://github.com/wiredoor/home-assistant-addon/blob/main/README.md" \
+    org.opencontainers.image.source="https://github.com/wiredoor/home-assistant-wiredoor-addon" \
+    org.opencontainers.image.documentation="https://github.com/wiredoor/home-assistant-wiredoor-addon/blob/main/README.md" \
     org.opencontainers.image.version=${BUILD_VERSION}
 
 COPY run.sh /

@@ -37,7 +37,7 @@ http:
 
 ## ⚙️ Installation
 
-1. Add this add-on repository to your Home Assistant instance: [https://github.com/wiredoor/home-assistant-addon](https://github.com/wiredoor/home-assistant-addon)
+1. Add this add-on repository to your Home Assistant instance: [https://github.com/wiredoor/home-assistant-wiredoor-addon](https://github.com/wiredoor/home-assistant-wiredoor-addon)
 2. Install the **Wiredoor Tunnel** add-on from the list.
 3. Configure the following two options:
 
@@ -64,7 +64,7 @@ homeassistant:
 
 ## ❓ Need Help?
 
-📖 Full Documentation: [See Docs tab](https://github.com/wiredoor/home-assistant-addon/blob/main/wiredoor/DOCS.md)
+📖 Full Documentation: [See Docs tab](https://github.com/wiredoor/home-assistant-wiredoor-addon/blob/main/wiredoor/DOCS.md)
 
 🔗 Wiredoor Project: [www.wiredoor.net](https://www.wiredoor.net) | [GitHub](https://github.com/wiredoor/wiredoor)
 
