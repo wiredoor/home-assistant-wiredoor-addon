@@ -5,8 +5,6 @@ Securely expose your Home Assistant instance to the internet using [Wiredoor](ht
 > **No port forwarding or cloud dependency required.**
 > Works on `aarch64`, `amd64`, and `armv7` architectures.
 
-![Screenshot](https://user-images.githubusercontent.com/your-image-placeholder.png)
-
 ---
 
 ## 🚀 Features
