@@ -24,7 +24,7 @@ To ensure Home Assistant accepts requests forwarded through Wiredoor, update you
 http:
   use_x_forwarded_for: true
   trusted_proxies:
-    - 172.30.33.0/24
+    - 172.30.0.0/16
 ```
 
 🔧 Add-on Setup

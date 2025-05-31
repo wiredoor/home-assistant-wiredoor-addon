@@ -22,13 +22,13 @@ Before using this add-on, make sure you have:
 
 1. Access to a running **Wiredoor Server** ([GitHub](https://github.com/wiredoor/wiredoor), [Website](https://www.wiredoor.net))
 2. A **gateway node** created for Home Assistant, with the proper **subnet** to reach `homeassistant`
-3. The **subnet `172.30.33.0/24`** added to `trusted_proxies` in your Home Assistant `configuration.yaml`
+3. The **subnet `172.30.0.0/16`** added to `trusted_proxies` in your Home Assistant `configuration.yaml`
 
 ```yaml
 http:
   use_x_forwarded_for: true
   trusted_proxies:
-    - 172.30.33.0/24
+    - 172.30.0.0/16
 ```
 
 ---
