@@ -24,6 +24,8 @@ Before using this add-on, make sure you have:
 2. A **gateway node** created for Home Assistant, with the proper **subnet** to reach `homeassistant`
 3. The **subnet `172.30.0.0/16`** added to `trusted_proxies` in your Home Assistant `configuration.yaml`
 
+![Configure Wiredoor Gateway Node](./images/add-gateway-node.png)
+
 ```yaml
 http:
   use_x_forwarded_for: true
@@ -43,6 +45,8 @@ http:
 url: "https://your-wiredoor-server.com"
 token: "your-gateway-node-token"
 ```
+
+![Configure connection to Wiredoor](./images/hass-wiredoor-config.png)
 
 4. Start the add-on. It will establish a secure WireGuard tunnel.
 

@@ -12,7 +12,7 @@ Before using this add-on, you must:
 2. Create a **gateway node** from the Wiredoor Dashboard.
 3. Set the **target subnet of the node** to include the IP used by Home Assistant, e.g., `172.30.32.0/23` or `172.30.0.0/16`
 
-![Configure connection to Wiredoor](../images/add-gateway-node.png)
+![Configure Wiredoor Gateway Node](https://raw.githubusercontent.com/wiredoor/home-assistant-wiredoor-addon/refs/heads/main/images/add-gateway-node.png)
 
 ---
 
@@ -32,12 +32,12 @@ http:
 1. Open the **Configuration** tab of the add-on.
 2. Set:
 
-![Configure connection to Wiredoor](../images/hass-wiredoor-config.png)
-
 ```yaml
 url: "https://your-wiredoor-server.com"
 token: "your-gateway-node-token"
 ```
+
+![Configure connection to Wiredoor](https://raw.githubusercontent.com/wiredoor/home-assistant-wiredoor-addon/refs/heads/main/images/hass-wiredoor-config.png)
 
 ## 🌍 Expose Home Assistant
 
@@ -51,7 +51,7 @@ In your Wiredoor Dashboard:
 - **Backend Protocol & Hostname/IP**: `http://homeassistant`
 - **Backend Port**: `8123`
 
-![Configure Public Home Assistant Service](../images/expose-hass.png)
+![Configure Public Home Assistant Service](https://raw.githubusercontent.com/wiredoor/home-assistant-wiredoor-addon/refs/heads/main/images/expose-hass.png)
 
 You can also expose other services (like ESPHome, Node-RED) if they're reachable from the Wiredoor subnet.
 
