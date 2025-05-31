@@ -29,8 +29,8 @@ Securely expose your Home Assistant instance to the internet using [Wiredoor](ht
 Before using this add-on, make sure you have:
 
 1. Access to a running **Wiredoor Server** ([GitHub](https://github.com/wiredoor/wiredoor), [Website](https://www.wiredoor.net))
-2. A **gateway node** created for Home Assistant, with the proper **subnet** to reach `homeassistant.local`
-3. The **subnet `172.30.33.0/24`** added to `trusted_proxies` in your Home Assistant `configuration.yaml`
+2. A **gateway node** created for Home Assistant, with the proper **subnet** to reach `homeassistant` container.
+3. The **subnet `172.30.33.0/24`** added to `trusted_proxies` in your Home Assistant `configuration.yaml`.
 
 ```yaml
 http:
@@ -59,7 +59,7 @@ token: "your-gateway-node-token"
 Once the tunnel is connected, go to your Wiredoor dashboard and expose a service:
 
 - Domain: `myhass.example.com`
-- Target: `homeassistant.local:8123`
+- Target: `homeassistant:8123`
 
 Then, optionally, set the `external_url` in your Home Assistant `configuration.yamls`:
 

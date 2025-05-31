@@ -48,7 +48,7 @@ In your Wiredoor Dashboard:
 
 - **Service Name**: `homeassistant`
 - **Public Domain**: `myhass.example.com`
-- **Backend Protocol & Hostname/IP**: `http://homeassistant.local`
+- **Backend Protocol & Hostname/IP**: `http://homeassistant`
 - **Backend Port**: `8123`
 
 ![Configure Public Home Assistant Service](../images/expose-hass.png)
@@ -70,7 +70,7 @@ This enables accurate redirects and better integration with some features (e.g. 
 
 - **400 or 403 errors**: Make sure `trusted_proxies` is correctly configured. If you change the `configuration.yaml` file, make sure you restart home assistant.
 - **No connection**: Check the logs of the add-on. It should show `Connected to Wiredoor Server`.
-- **Wrong service IP**: Ensure your Wiredoor gateway subnet includes the IP of `homeassistant.local`.
+- **Wrong service IP**: Ensure your Wiredoor gateway subnet includes the IP of `homeassistant` container.
 
 ## 🧠 FAQ
 
