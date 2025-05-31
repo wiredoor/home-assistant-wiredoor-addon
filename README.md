@@ -1,6 +1,6 @@
 # Wiredoor Tunnel Add-on for Home Assistant
 
-Securely expose your Home Assistant instance to the internet using [Wiredoor](https://github.com/wiredoor/wiredoor). A fully self-hosted, open-source ingress-as-a-service platform based on WireGuard and NGINX.
+This add-on allows you to **securely expose your Home Assistant instance to the internet** using [Wiredoor](https://github.com/wiredoor/wiredoor). A fully self-hosted, open-source ingress-as-a-service platform based on WireGuard and NGINX.
 
 > **No port forwarding or cloud dependency required.**
 > Works on `aarch64`, `amd64`, and `armv7` architectures.
@@ -9,10 +9,22 @@ Securely expose your Home Assistant instance to the internet using [Wiredoor](ht
 
 ## 🚀 Features
 
+- Secure tunnel connection via WireGuard to a remote Wiredoor server.
 - Expose your Home Assistant instance over HTTPS securely
+- Supports OIDC authentication when enabled on the Wiredoor dashboard.
+- Automatic reconnection after network interruptions or reboots.
 - Includes built-in `wiredoor-cli` for seamless connection
 - Very low resource usage
 - Fully open-source and self-hosted
+- Multi-architecture support: `amd64`, `aarch64`, and `armv7`.
+
+---
+
+## How it works
+
+1. The add-on launches `wiredoor-cli` and connects to your Wiredoor server using configuration provided.
+2. Once online, the node is able to **expose local services like Home Assistant over HTTPS**.
+3. You configure the exposed domain via the Wiredoor dashboard (e.g., `https://hass.yourdomain.com`).
 
 ---
 
