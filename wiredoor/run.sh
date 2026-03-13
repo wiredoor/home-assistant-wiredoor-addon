@@ -18,6 +18,6 @@ dnsmasq --server=127.0.0.11 --listen-address=0.0.0.0 --bind-interfaces
 
 echo "Connecting to ${WIREDOOR_URL}..."
 
-/usr/bin/wiredoor connect --url="${WIREDOOR_URL}" --token="${TOKEN}"
+sudo /usr/bin/wiredoor connect --url="${WIREDOOR_URL}" --token="${TOKEN}"
 
-/usr/bin/wiredoor status --watch --interval=10
+sudo /usr/bin/wiredoor status --watch --interval=10

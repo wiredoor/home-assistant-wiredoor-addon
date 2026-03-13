@@ -1,7 +1,7 @@
 name: "Wiredoor Tunnel"
 slug: wiredoor
 description: "Expose Home Assistant securely using Wiredoor"
-version: "1.0.0"
+version: "1.1.0"
 url: "https://github.com/wiredoor/home-assistant-wiredoor-addon/tree/main/wiredoor"
 arch:
   - aarch64

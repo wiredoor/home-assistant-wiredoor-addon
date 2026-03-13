@@ -23,9 +23,15 @@ LABEL io.hass.name="${BUILD_NAME}" \
 
 COPY run.sh /
 
-RUN apk add --update curl jq iptables wireguard-tools tcpdump dnsmasq iproute2 \
+RUN apk add --update curl jq iptables wireguard-tools tcpdump dnsmasq iproute2 libcap sudo \
   && ln -s /usr/bin/resolvectl /usr/local/bin/resolvconf \
+  && addgroup -g 1000 wiredoor \
+  && adduser -S -u 1000 -G wiredoor -H -s /sbin/nologin wiredoor \
+  && setcap 'cap_net_bind_service=+ep' /usr/sbin/dnsmasq \
+  && echo 'wiredoor ALL=(root) NOPASSWD: /usr/bin/wiredoor, /usr/bin/wg-quick, /usr/bin/wg, /sbin/ip, /usr/sbin/iptables, /usr/sbin/ip6tables, /usr/bin/tcpdump, /usr/sbin/xtables-nft-multi' > /etc/sudoers.d/wiredoor \
   && chmod a+x /run.sh \
   && curl -s https://www.wiredoor.net/install-wiredoor-cli.sh | sh
+
+USER wiredoor
 
 CMD [ "/run.sh" ]
