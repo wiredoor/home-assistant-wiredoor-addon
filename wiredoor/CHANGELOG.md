@@ -7,14 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [v1.1.0] - 2026-03-13
 
-### Added
-- N/A
-
 ### Changed
 - Run container as a non-root user instead of root
-
-### Removed
-- N/A
 
 ## [v1.0.0] - 2025-05-31
 
@@ -25,9 +19,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for ARMv7, AArch64, and AMD64 architectures.
 - Configuration interface to define Wiredoor server and token.
 - Full support for subdomain-based public access to Home Assistant.
-
-### Changed
-- N/A
-
-### Removed
-- N/A

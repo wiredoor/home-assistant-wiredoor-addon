@@ -21,7 +21,9 @@ LABEL io.hass.name="${BUILD_NAME}" \
     org.opencontainers.image.documentation="https://github.com/wiredoor/home-assistant-wiredoor-addon/blob/main/README.md" \
     org.opencontainers.image.version=${BUILD_VERSION}
 
-COPY run.sh /
+COPY rootfs/ /
+
+COPY --chown=1000:1000 run.sh /
 
 RUN apk add --update curl jq iptables wireguard-tools tcpdump dnsmasq iproute2 libcap sudo \
   && ln -s /usr/bin/resolvectl /usr/local/bin/resolvconf \
