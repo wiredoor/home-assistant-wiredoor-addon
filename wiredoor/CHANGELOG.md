@@ -8,7 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v1.1.0] - 2026-03-13
 
 ### Changed
-- Run container as a non-root user instead of root
+- Replace direct parsing of `/data/options.json` with `jq` by using Bashio configuration helpers
+
+### Added
+- Dedicated `wiredoor` user (UID/GID 1000)
+- `fix-attrs.d` configuration to ensure correct ownership of `/data` and `/data/options.json`
 
 ## [v1.0.0] - 2025-05-31
 

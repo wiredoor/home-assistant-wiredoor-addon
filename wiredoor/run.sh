@@ -20,7 +20,7 @@ bashio::log.info "Connecting to ${WIREDOOR_URL}..."
 
 /usr/bin/wiredoor connect --url="${WIREDOOR_URL}" --token="${TOKEN}"
 
-sudo /usr/bin/wiredoor status --watch --interval=10
+/usr/bin/wiredoor status --watch --interval=10
 
 bashio::log.info "Starting Wiredoor status watcher..."
 exec /usr/bin/wiredoor status --watch --interval=10
