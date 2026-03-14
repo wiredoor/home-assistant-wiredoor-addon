@@ -31,7 +31,6 @@ RUN apk add --no-cache curl iptables wireguard-tools tcpdump dnsmasq iproute2 li
   && echo 'wiredoor ALL=(root) NOPASSWD: /usr/bin/wiredoor, /usr/bin/wg-quick, /usr/bin/wg, /sbin/ip, /usr/sbin/iptables, /usr/sbin/ip6tables, /usr/bin/tcpdump, /usr/sbin/xtables-nft-multi' > /etc/sudoers.d/wiredoor \
   && chmod 0440 /etc/sudoers.d/wiredoor \
   && chmod a+x /run.sh \
-  && curl -fsSL https://www.wiredoor.net/install-wiredoor-cli.sh | sh \
-  && apk del curl
+  && curl -fsSL https://www.wiredoor.net/install-wiredoor-cli.sh | sh
 
 CMD [ "/run.sh" ]
