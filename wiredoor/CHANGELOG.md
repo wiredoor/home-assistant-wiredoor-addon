@@ -12,7 +12,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Dedicated `wiredoor` user (UID/GID 1000)
-- `fix-attrs.d` configuration to ensure correct ownership of `/data` and `/data/options.json`
 
 ## [v1.0.0] - 2025-05-31
 
